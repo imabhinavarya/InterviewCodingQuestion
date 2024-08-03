@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b917ee6-9c8a-4409-83ca-199c34dc2823" name="Changes" comment="array rotation question">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interview_asked/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview_asked/Palindrome.java" afterDir="false" />
+    <list default="true" id="7b917ee6-9c8a-4409-83ca-199c34dc2823" name="Changes" comment="palindrome restructure">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_08_2024_20_53_[Changes]/shelved.patch" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,17 +17,14 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "imabhinavarya"
-  }
+  "lastFilter": {}
 }]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/imabhinavarya/InterviewCodingQuestion.git",
-    "accountId": "f23659e8-cd79-4160-a310-2c2f75dbeaaf"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/imabhinavarya/InterviewCodingQuestion.git&quot;,
+    &quot;accountId&quot;: &quot;f23659e8-cd79-4160-a310-2c2f75dbeaaf&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -38,15 +34,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Palindrome.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Palindrome.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="interview_asked.Palindrome" />
@@ -76,6 +72,31 @@
       <option name="presentableId" value="Default" />
       <updated>1721110845114</updated>
     </task>
+    <task id="LOCAL-00001" summary="array rotation question">
+      <option name="closed" value="true" />
+      <created>1722698470051</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722698470052</updated>
+    </task>
+    <task id="LOCAL-00002" summary="palindrome restructure">
+      <option name="closed" value="true" />
+      <created>1722698739551</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722698739551</updated>
+    </task>
+    <task id="LOCAL-00003" summary="palindrome restructure">
+      <option name="closed" value="true" />
+      <created>1722698837732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722698837732</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,5 +109,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="array rotation question" />
+    <MESSAGE value="palindrome restructure" />
+    <option name="LAST_COMMIT_MESSAGE" value="palindrome restructure" />
   </component>
 </project>
