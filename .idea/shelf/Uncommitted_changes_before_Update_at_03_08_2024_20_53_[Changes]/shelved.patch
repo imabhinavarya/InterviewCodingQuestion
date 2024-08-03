@@ -1,0 +1,31 @@
+Index: src/interview_asked/Palindrome.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package interview_asked;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class Palindrome {\r\n    public static void main(String[] args) {\r\n//        String s = \"malayalam\";\r\n//        System.out.println(isPalindrome(s));\r\n    }\r\n\r\n    private static boolean isPalindrome(String str) {\r\n        int s=0, e = str.length()-1;\r\n        while(s<e){\r\n            if(str.charAt(s) != str.charAt(e)){\r\n                return false;\r\n            }\r\n            s++; e--;\r\n        }\r\n        return true;\r\n    }\r\n\r\n    ////////////////////////////////////////////////////////////////////\r\n    public static int binary(int[] arr, int tar){\r\n        int si=0,ei=arr.length-1;\r\n        while(si<=ei){\r\n            int mid = (si+ei)/2;\r\n            if(arr[mid]==tar){\r\n                return mid;\r\n            } else if(arr[mid]<tar){\r\n                si=mid+1;\r\n            } else{\r\n                ei=mid-1;\r\n            }\r\n        }\r\n        return -1;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/interview_asked/Palindrome.java b/src/interview_asked/Palindrome.java
+--- a/src/interview_asked/Palindrome.java	(revision 3cf0d1a5562032875a1c9bcf039934cf85222301)
++++ b/src/interview_asked/Palindrome.java	(date 1722698581542)
+@@ -19,20 +19,4 @@
+         }
+         return true;
+     }
+-
+-    ////////////////////////////////////////////////////////////////////
+-    public static int binary(int[] arr, int tar){
+-        int si=0,ei=arr.length-1;
+-        while(si<=ei){
+-            int mid = (si+ei)/2;
+-            if(arr[mid]==tar){
+-                return mid;
+-            } else if(arr[mid]<tar){
+-                si=mid+1;
+-            } else{
+-                ei=mid-1;
+-            }
+-        }
+-        return -1;
+-    }
+ }
