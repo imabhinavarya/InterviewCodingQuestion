@@ -1,6 +1,8 @@
 package arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     private static void rotateByK(int[] arr, int k){
@@ -61,6 +63,17 @@ public class Main {
         printArr(arr);
 
         System.out.println("===============3================");
+        Main main = new Main();
+        int[] cand = {10,1,2,7,6,1,5};
+        int tar=8;
+//        int[] cand = {2,5,2,1,2};
+//        int tar=5;
+        List<List<Integer>> list = main.allCombinationOfTarget(cand, tar);
+        System.out.println(list);
+
+        System.out.println("===============4================");
+        int[] h={7,7,8,6,5};
+        System.out.println(minArrow(h));
     }
 
     private static void printArr(int[] arr){
@@ -68,5 +81,54 @@ public class Main {
             System.out.print(i+ " ");
         }
         System.out.println();
+    }
+
+    public List<List<Integer>> allCombinationOfTarget(int[] arr, int tar){
+        List<List<Integer>> ans = new ArrayList<>();
+        Arrays.sort(arr);
+        helper(0, arr, tar, ans, new ArrayList<>());
+        return ans;
+    }
+
+    public void helper(int idx, int[] arr, int tar, List<List<Integer>> ans, List<Integer> temp){
+        if(tar==0){
+            ans.add(new ArrayList<>(temp));
+            return;
+        }
+        for (int i = idx; i < arr.length; i++) {
+            if(i>idx && arr[i]==arr[i-1]) continue;
+            if(tar<arr[i]) break;
+
+            temp.add(arr[i]);
+            helper(i+1,  arr,tar-arr[i], ans,temp);
+            temp.removeLast();
+        }
+    }
+
+    public static int minArrow(int[] h){
+        // 7 7 8 6 5
+        int count=0;
+        for(int i : h){
+            int max = maxi(h);
+            if(max<0) break;
+            for(int j=0;j<h.length;j++){
+                if(max==h[j]){
+                    h[j]=0;
+                    max--;
+                }
+            }
+            if(max>0) count++;
+        }
+        return count;
+    }
+
+    public static int maxi(int[] h){
+        int max=-1;
+        for(int i : h){
+            if(i>max){
+                max=i;
+            }
+        }
+        return max;
     }
 }
